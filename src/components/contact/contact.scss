@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .contact {
-    background-color: white;
+    background-color: #457b9d;
     display: flex;
 
     @include mobile {
@@ -10,10 +10,13 @@
 
     .left {
         flex: 1;
+        display: flex;
         overflow: hidden;
+        align-items: center;
+        justify-content: center;
 
         img {
-            height: 100%;
+            height: 70%;
         }
     }
     .right {
@@ -38,6 +41,7 @@
                 width: 300px;
                 height: 30px;
                 font-size: 14px;
+                border-radius: 10px;
 
                 @include mobile {
                     width: 200px;
@@ -49,6 +53,7 @@
                 width: 300px;
                 height: 200px;
                 font-size: 14px;
+                border-radius: 10px;
 
                 @include mobile {
                     width: 200px;
@@ -60,7 +65,7 @@
                 width: 150px;
                 height: 30px;
                 color: white;
-                background-color: crimson;
+                background-color: #a63d40;
                 border: none;
                 border-radius: 10px;
                 font-weight: 500;
@@ -71,7 +76,7 @@
                 }
             }
             span {
-                color: green;
+                color: $mainColor;
             }
         }
     }
