@@ -77,5 +77,6 @@ export const fullstackPortfolio = [
       }
 ];
 
+export const allPortfolio = [].concat(frontendPortfolio, backendPortfolio, fullstackPortfolio);
 
 

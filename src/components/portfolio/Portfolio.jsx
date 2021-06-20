@@ -4,7 +4,8 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import {
   frontendPortfolio,
   backendPortfolio,
-  fullstackPortfolio
+  fullstackPortfolio,
+  allPortfolio
 } from "../../data";
 
 export default function Portfolio() {
@@ -33,7 +34,7 @@ export default function Portfolio() {
   useEffect(() => {
     switch (selected) {
       case "all":
-        setdata(frontendPortfolio);
+        setdata(allPortfolio);
         break;
       case "frontend":
         setdata(frontendPortfolio);
