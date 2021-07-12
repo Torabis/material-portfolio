@@ -96,20 +96,21 @@
                 }
               }
               h2 {
-                font-size: 20px;
+                font-size: 24px;
 
                 @include mobile {
                   height: 50%;
                 }
               }
               p {
-                font-size: 13px;
+                font-size: 14px;
+                font-weight: bold;
                 
                 @include mobile {
                   display:none
                 }
               }
-              span {
+              a {
                 font-size: 12px;
                 font-weight: 600;
                 text-decoration: underline;

@@ -8,29 +8,32 @@ export default function Works() {
         {
           id: "1",
           icon: "./assets/browser.png",
-          title: "Front-End",
+          title: "RESUME",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+            "You can download my resume here",
           img:
-            "assets/frontend.png",
+            "assets/resume-work.jpg",
+            project: "https://github.com/Torabis/react-portfolio/raw/main/src/assets/TORABICV.pdf"
         },
         {
           id: "2",
-          icon: "./assets/server.png",
-          title: "Back-End",
+          icon: "./assets/linkedin.png",
+          title: "LINKEDIN",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "More about me in my linkedin profile",
           img:
-            "assets/backend.png",
+            "assets/linkedin-work.jpg",
+            project: "https://www.linkedin.com/in/torabis/"
         },
         {
           id: "3",
-          icon: "./assets/coding.png",
-          title: "Full Stack",
+          icon: "./assets/github.png",
+          title: "GITHUB",
           desc:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "Find more about my project in my GitHub",
           img:
-            "assets/fullstack.jpg",
+            "assets/github-work.jpg",
+            project: "https://github.com/Torabis"
         },
       ];
       
@@ -53,7 +56,7 @@ export default function Works() {
                 <p>
                     {d.desc}
                 </p>
-                <span>Projects</span>
+                <a href={d.project} target="_blank">Link</a>
               </div>
             </div>
             <div className="right">
