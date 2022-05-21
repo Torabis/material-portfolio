@@ -13,7 +13,7 @@ export default function Works() {
             "You can download my resume here",
           img:
             "assets/resume-work.jpg",
-            project: "https://github.com/Torabis/react-portfolio/raw/main/src/assets/TORABICV.pdf"
+            project: "https://drive.google.com/file/d/1i4NzoCNtLkW-TGjoPraSEb-fas5sZLn9/view?usp=sharing"
         },
         {
           id: "2",
@@ -44,19 +44,19 @@ export default function Works() {
   return (
       <div className="works" id="works">
       <div className="slider" style={{transform:`translateX(-${currentSlide*100}vW)`}}>
-            {data.map((d) =>( 
+            {data.map((d, i) =>( 
         <div className="container">
           <div className="item">
             <div className="left">
               <div className="leftContainer">
-                <div className="imgContainer">
+                <div className="imgContainer" key={i}>
                   <img src={d.icon} alt="" />
                 </div>
                 <h2>{d.title}</h2>
                 <p>
                     {d.desc}
                 </p>
-                <a href={d.project} target="_blank">Link</a>
+                <a href={d.project} target="_blank" rel="noreferrer">Link</a>
               </div>
             </div>
             <div className="right">
